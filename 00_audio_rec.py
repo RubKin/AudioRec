@@ -15,7 +15,7 @@ plt.ion()
 
 chunk = 2048            
 format = pyaudio.paInt16     
-channels = 1                 
+channels = int(input("How many Channels do you need... Mono or Stereo...:    ")                  
 rate = int(input("Which sample rate do you need... perhaps 22050, 44100 or 4800...:   "))              
 pa = pyaudio.PyAudio()
 
